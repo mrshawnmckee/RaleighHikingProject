@@ -125,3 +125,60 @@ body {
 .site-link {
     padding: 10px;
 }
+
+/* Expanding Cards https://www.udemy.com/course/50-projects-50-days/learn/lecture/23595192#overview*/
+.cards-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.expanding-cards {
+    display: flex;
+    width: 20%;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel h3 a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    /* Makes the link/h3 invisible if not active */
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 a {
+    opacity: 1;
+    /* This stops the h3/link from immediately appearing until card is fully expanded*/
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px) {
+    .expanding-cards {
+        width: 100vw;
+    }
+
+
+}
