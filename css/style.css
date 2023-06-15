@@ -56,6 +56,39 @@ body {
     position: relative;
 }
 
+.hemlock-bluffs-header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(128, 214, 113, 0.803),
+    rgba(40, 180, 133, 0.803)),
+    url(../img/hemlock-bluffs-nature.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.lake-crabtree-header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(128, 214, 113, 0.803),
+    rgba(40, 180, 133, 0.803)),
+    url(../img/crabtree-CP.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.harris-lake-header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(128, 214, 113, 0.803),
+    rgba(40, 180, 133, 0.803)),
+    url(../img/Harris_Lake_Sunset.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
 .text-box {
     position: absolute;
     top: 40%;
@@ -161,7 +194,7 @@ body {
     text-decoration: none;
     color: #fff;
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     left: 20px;
     margin: 0;
     /* Makes the link/h3 invisible if not active */
