@@ -218,3 +218,12 @@ body {
 
 
 } */
+
+/* .information {
+    display: flex;
+} */
+
+.activities {
+    font-size: 20px;
+    margin: 20px;
+}
